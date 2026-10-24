@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="vi"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#111827"><title>Social Caption Studio</title>
+<link rel="stylesheet" href="style.css"></head>
+<body><main class="app">
+<header><span class="eyebrow">SOCIAL CREATOR TOOLKIT</span><h1>Social Caption Studio ✨</h1><p>Tạo caption, hashtag và lưu ý tưởng cho TikTok, Facebook, Instagram — miễn phí, chạy ngay trên trình duyệt.</p></header>
+<section class="panel"><h2>1. Tạo nội dung</h2>
+<label for="platform">Nền tảng</label><select id="platform"><option>TikTok</option><option>Facebook</option><option>Instagram</option></select>
+<label for="topic">Chủ đề bài đăng</label><input id="topic" maxlength="100" placeholder="Ví dụ: một ngày nhiều tâm trạng">
+<label for="mood">Phong cách</label><select id="mood"><option value="sad">Tâm trạng</option><option value="cute">Dễ thương</option><option value="motivational">Động lực</option><option value="cool">Ngầu</option></select>
+<button id="generate">✨ Tạo caption</button><p class="hint">Gợi ý được tạo từ mẫu có sẵn, không sử dụng AI hoặc API.</p></section>
+<section class="panel"><h2>2. Kết quả</h2><textarea id="result" rows="6" aria-label="Caption đã tạo" placeholder="Caption sẽ xuất hiện tại đây..."></textarea><div class="actions"><button id="copy" class="secondary">Sao chép</button><button id="save" class="secondary">Lưu ý tưởng</button></div><p id="status" role="status" aria-live="polite"></p></section>
+<section class="panel"><div class="heading"><h2>3. Ý tưởng đã lưu</h2><button id="clear" class="danger">Xóa tất cả</button></div><ul id="saved"></ul></section>
+<footer>Không yêu cầu đăng nhập • Dữ liệu lưu trên thiết bị của bạn</footer>
+</main><script src="script.js" defer></script></body></html>
